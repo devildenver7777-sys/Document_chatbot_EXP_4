@@ -1,0 +1,74 @@
+:root {
+  --primary: #1e40af;
+  --primary-hover: #1d4ed8;
+  --primary-light: #eff6ff;
+  --secondary: #475569;
+  --bg-main: #f8fafc;
+  --bg-surface: #ffffff;
+  --border: #e2e8f0;
+  --border-focus: #3b82f6;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --accent: #0284c7;
+  --success: #15803d;
+  --success-bg: #f0fdf4;
+  --warning: #b45309;
+  --warning-bg: #fffbeb;
+  --danger: #b91c1c;
+  --danger-bg: #fef2f2;
+  --highlight-bg: #fef08a;
+  --highlight-border: #eab308;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.08), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--text-main);
+  background-color: var(--bg-main);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
+
+/* Accessibility focus styles (WCAG 2.1 AA) */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
